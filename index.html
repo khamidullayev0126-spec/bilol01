@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilol Bahriddinov · Portfolio</title>
+  <meta name="description" content="Bilol Bahriddinov — CoddyCamp Junior guruhi o'quvchisi, kelajakdagi Software Engineer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="top">
+      <a href="../index.html" class="chip">← Jamoa</a>
+      <span class="chip ghost" id="status"></span>
+    </header>
+
+    <main class="bento">
+      <!-- Har bir tile — bento kartochkasi. Ma'lumotlar script.js dan keladi -->
+      <section class="tile t-hello">
+        <div class="avatar" id="avatar"></div>
+        <div>
+          <p class="hi">Salom, men</p>
+          <h1 id="name" data-fit></h1>
+          <p class="role" id="role"></p>
+        </div>
+      </section>
+
+      <section class="tile t-goal">
+        <p class="small">Maqsadim</p>
+        <p class="big" id="goal"></p>
+        <span class="rocket" aria-hidden="true">🚀</span>
+      </section>
+
+      <section class="tile t-about">
+        <p class="small">Men haqimda</p>
+        <p id="about"></p>
+      </section>
+
+      <section class="tile t-school">
+        <p class="small">O'qish joyim</p>
+        <p class="big" id="school"></p>
+        <p id="group"></p>
+      </section>
+
+      <section class="tile t-skills">
+        <p class="small">Ko'nikmalarim</p>
+        <ul class="pills" id="skills"></ul>
+      </section>
+
+      <section class="tile t-now">
+        <p class="small">Hozir o'rganyapman</p>
+        <p class="big" id="now"></p>
+        <div class="progress"><div id="progress-bar"></div></div>
+        <p class="tiny" id="progress-text"></p>
+      </section>
+
+      <section class="tile t-projects">
+        <p class="small">Loyihalarim</p>
+        <div class="projects" id="projects"></div>
+      </section>
+
+      <section class="tile t-contact">
+        <p class="small">Bog'lanish</p>
+        <div class="links" id="contacts"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Bilol Bahriddinov</span>
+      <a href="../abdulhamid/index.html">Abdulhamid Xamidullayev portfoliosi →</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="../fit.js"></script>
+</body>
+</html>
